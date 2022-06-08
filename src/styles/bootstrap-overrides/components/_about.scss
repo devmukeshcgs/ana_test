@@ -1,0 +1,60 @@
+#about {
+    // background: #ffffff;
+    // max-width: 700px;
+    // margin: 2rem;
+    border: 1px solid #dfdfdf;
+    >.container {
+        position: relative;
+        top: -100px;
+    }
+    .header {
+        min-height: 200px;
+        &.about-header-bg {
+            padding: 1rem;
+            background-color: $lb-blue;
+        }
+    }
+    .future-tech-col {
+        background: $white;
+        .future-tech {
+            padding: 2rem;
+            .logo-img {
+                text-align: center;
+                img {
+                    max-width: 150px;
+                    margin-bottom: 1.5rem;
+                }
+            }
+            h3 {
+                // color: $text-clr;
+                margin-bottom: 2.5rem;
+            }
+            p {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+    .leapbridge-col {
+        background: $lb-yellow;
+        .leapbridge {
+            padding: 2rem;
+            .logo-img {
+                text-align: center;
+                img {
+                    max-width: 150px;
+                    margin-bottom: 1.5rem;
+                }
+            }
+            h3 {
+                // color: $text-clr;
+                margin-bottom: 2.5rem;
+            }
+            p {
+                color: $white;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {}
+    @media only screen and (max-width: 480px) {}
+}

@@ -1,0 +1,93 @@
+#home {}
+
+.detail-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $lb-yellow;
+    margin-bottom: 2rem;
+    .details {
+        h1 {
+            padding-left: 2rem;
+            transition: 0.3s;
+        }
+        flex: 1;
+        width: 50%;
+        ul {
+            padding: 0rem 2rem;
+            list-style: none;
+            li {
+                font-size: 1.25rem;
+            }
+        }
+    }
+    .img {
+        padding: -1rem;
+        flex: 1;
+        width: 50%;
+        img {
+            width: 100%;
+        }
+        &.step-by-step-bg {
+            border: 1px solid rgb(255, 0, 0);
+            height: 150px;
+            // background-image: url("../images/stepByStep.png");
+            background-size: cover;
+        }
+        &.phygital-learning-bg {
+            border: 1px solid rgb(255, 0, 0);
+            height: 150px;
+            // background-image: url("../images/phygitalLearning.png");
+            background-size: cover;
+        }
+        &.designed-by-experts-bg {
+            border: 1px solid rgb(255, 0, 0);
+            height: 150px;
+            // background-image: url("../images/designedByExperts.png");
+            background-size: cover;
+        }
+    }
+    &.right {
+        flex-direction: row-reverse;
+        .details {
+            // padding-right: 2rem;
+        }
+    }
+    &:nth-child(1) {
+        background-color: rgb(255, 197, 125);
+    }
+    &:nth-child(2) {
+        background-color: rgb(204, 255, 157);
+    }
+    &:nth-child(3) {
+        background-color: rgb(255, 202, 202);
+    }
+    &:hover {
+        .details {
+            h1 {
+                padding-left: 2rem;
+                padding-bottom: 1rem;
+                transition: 0.3s;
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {}
+    @media only screen and (max-width: 480px) {
+        flex-direction: column-reverse;
+        &.right {
+            flex-direction: column-reverse;
+        }
+        .details {
+            width: auto;
+            padding: 1rem 2rem;
+            h1 {
+                padding-left: 0rem;
+            }
+            ul {
+                padding: 0rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+#career {
+    background: #ffffff;
+    // max-width: 700px;
+    // margin: 2rem;
+    border: 1px solid #dfdfdf;
+    >.container {
+        position: relative;
+        top: -100px;
+        background-color: $lb-yellow;
+        .sec-header {
+            padding: 2rem 1rem 5rem 1rem;
+            width: 80%;
+            color: #ffffff;
+            margin: 0 auto;
+            text-align: center;
+            h1 {
+                color: inherit;
+            }
+            h3 {
+                color: inherit;
+            }
+        }
+    }
+    .header {
+        min-height: 300px;
+        &.career-header-bg {
+            // background-image: url('images/career-bg.jpeg');
+            // padding: 1rem;
+            max-height: 300px;
+            overflow: hidden;
+            background-color: $lb-blue;
+            position: relative;
+            z-index: 0;
+            >.container {
+                margin: 0 auto;
+                position: absolute;
+                z-index: 2;
+                top: 1rem;
+                h1 {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    .job-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column;
+        .job-card {
+            // flex: 1;
+            // width: calc(50% - 1.5rem);
+            background: #ffffff;
+            border-radius: 1rem;
+            margin: 1rem 0;
+            padding: 1.5rem;
+        }
+        &.typ-inline {
+            .job-card {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+                // flex: 1;
+                // width: calc(50% - 1.5rem);
+                background: transparent;
+                border-radius: 0rem;
+                margin: 0rem 0;
+                padding: 1.5rem;
+                // border-bottom: 2px solid #ffffff;
+                border-top: 2px solid #ffffff;
+                .title {
+                    flex: 2;
+                    transition: 0.3s;
+                }
+                .location {
+                    flex: 1;
+                }
+                .position {
+                    flex: 1;
+                }
+                .cta {
+                    flex: 1;
+                    text-align: center;
+                }
+                &:hover {
+                    .title {
+                        flex: 2;
+                        padding-left: 2rem;
+                        transition: 0.3s;
+                        h3 {
+                            color: #ffffff !important;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {}
+    @media only screen and (max-width: 480px) {}
+}
